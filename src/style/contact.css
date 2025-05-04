@@ -1,0 +1,116 @@
+:root{
+    --box-shadow :#1d22406c ;
+     --main-font:"Quicksand", sans-serif;
+     --second-font:'mulish',sans-serif;
+     --main-color : #35b1f7;
+     --second-color : #437aeb;
+     --third-color : #007aff;
+     --dark-mainColor:#1d2240;
+     --light-color:#ffffff;
+     --background-color:linear-gradient(to right , #35b1f7,#007aff, #437aeb);
+     ;
+   }
+.head-contact{
+    margin: 3rem;
+    color: var(--dark-mainColor);
+}
+.head-contact p{
+    color: var(--box-shadow);
+}
+.head-contact hr{
+    margin: auto auto 20px;
+}
+.contact-structure{
+    padding: 50px;
+    height: fit-content;
+}
+.info ul li{
+ font-size: 1rem;
+ font-weight: 600;
+ list-style: none;
+ text-transform: capitalize;
+ padding: 20px 0;
+ color: var(--dark-mainColor);
+ border-bottom: 1px solid var(--dark-mainColor);
+}
+.info span{
+  font-size:1.5rem ;
+  color: var(--main-color);
+}
+.inputs{
+ width: 600px;
+}
+.form{
+    width: 600px !important;
+}
+.inputs input {
+    margin-left: 5px;
+    padding: 10px 20px;
+    margin-bottom: 2px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    font-size:1.2rem ;
+    color: var(--dark-mainColor) ;
+}
+.inputs input::placeholder,
+.message textarea::placeholder{
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.message textarea{
+ width: 90%;
+ border-radius: 9px;
+ font-size:1.2rem ;
+ outline: none;
+ border: none;
+ height: 200px;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.link-btn{
+    float: right;
+    margin-right: 60px;
+    display: block;
+    width: 120px;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: var(--dark-mainColor);
+    color: var(--light-color);
+    border: none;
+    transition: all 0.2s;
+}
+.link-btn:hover{
+    background-color: var(--main-color);
+    color: var(--dark-mainColor);
+}
+@media (max-width: 992px) {
+    .contact-sec{
+        flex-wrap: wrap;
+       
+    }
+    .contact-structure{
+        padding: 0px;
+        width: 300px !important;
+       flex-wrap: wrap;
+       flex-direction: column-reverse;
+       height: fit-content;
+    }
+    .inputs,
+    .message textarea{
+        width: 300px;      
+        height: 200px;
+        /* margin-bottom: 10px;   */
+    }
+    .inputs input{
+        margin-bottom: 10px;  
+        width: 100%;
+    }
+    .message textarea{
+        margin-top: 50px;
+    }
+    .link-btn{
+        margin:20px auto auto ;
+    }
+    
+}

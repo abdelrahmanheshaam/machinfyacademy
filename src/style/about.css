@@ -1,0 +1,136 @@
+:root{
+    --box-shadow :#1d22406c ;
+     --main-font:"Quicksand", sans-serif;
+     --second-font:'mulish',sans-serif;
+     --main-color : #35b1f7;
+     --second-color : #437aeb;
+     --third-color : #007aff;
+     --dark-mainColor:#1d2240;
+     --light-color:#ffffff;
+     --background-color:linear-gradient(to right , #35b1f7,#007aff, #437aeb);
+     ;
+}
+.about-sec{
+    background-image: linear-gradient(to right ,var(--dark-mainColor),var(--dark-mainColor), #437aeb);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 80px;
+    position: relative;
+}
+.about-sec::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #1d2240a4;    z-index: 2;
+}
+.about-sec > div {
+  z-index: 3;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--light-color);
+}
+@media (max-width: 992px) {
+    .about-sec > div{
+        font-size: 2.5rem;
+    }
+    .MF-breif h2{
+        font-size: 1rem;
+        
+    }
+}
+.MF-breif{
+    margin-top: 10rem;
+}
+.MF-breif h2{
+    text-transform: capitalize;
+    color: var(--dark-mainColor);
+    font-size: 3rem;
+}
+.MF-breif article{
+    font-size: 1.2rem;
+
+}
+.provide{
+    margin-top: 20px;
+    color: var(--dark-mainColor);
+    flex-wrap: nowrap;
+    height: 300px;
+}
+
+.prov-head{
+    padding: 20px;
+    background-color: #007aff;
+    border-radius: 50%;
+    width: 60%;
+    height: 170px;
+    margin: auto;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 16px var(--main-color);
+    color: var(--light-color);
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.provide .select{
+    background-color: #1d2240;
+    box-shadow: 8px 8px 16px var(--box-shadow);
+}
+.provide div p {
+    font-size: 1.1rem;
+}
+/* start goals section  */
+.goals-holder{
+    gap: 80px;
+    margin-top: 50px;
+}
+.goal-img{
+    width: 600px;
+}
+.goal-img img{
+    border-radius: 8px;
+    max-width: 100%;
+}
+.goal h3{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.holder-accredited{
+    margin-top: 100px !important;
+}
+.accredited{
+    width: 150px !important;
+    margin: auto;
+}
+.accredited img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+@media (max-width: 992px) {
+    .provides{
+        flex-wrap: wrap;
+    }
+    .MF-breif h2{
+        font-size: 2.5rem;
+    }
+    .goal-img{
+      width: 300px;
+    }
+    .goal{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 786px){
+    .provides-section  .cr-header{
+        width: 75% !important;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+}

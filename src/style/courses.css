@@ -1,0 +1,220 @@
+
+:root{
+    --box-shadow :#1d22406c ;
+     --main-font:"Quicksand", sans-serif;
+     --second-font:'mulish',sans-serif;
+     --main-color : #35b1f7;
+     --second-color : #437aeb;
+     --third-color : #007aff;
+     --dark-mainColor:#1d2240;
+     --light-color:#ffffff;
+     --background-color:linear-gradient(to right , #35b1f7,#007aff, #437aeb);
+     ;
+}
+.course-sec{
+    background-image: url("/public/imgs/blog.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 80px;
+    position: relative;
+}
+.course-sec::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #1d2240a4;    z-index: 2;
+}
+.course-sec > div {
+  z-index: 3;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--light-color);
+}
+.our-courses-box {
+    padding-top: 5rem;
+    margin-left: 5rem !important;
+}
+.course-card{
+   margin: 0 20px 20px 0 ;
+    padding: 0 !important;
+    width: 300px !important;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 8px 8px 12px var(--box-shadow);
+    position: relative;
+}
+.course-card::before{
+  position: absolute;
+  content: "Beginner To Advanced ";
+  background-color: var(--dark-mainColor);
+  padding: 2px 5px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  top: 10px;
+  left: 5px;
+  color: var(--light-color);
+
+}
+.course-img{
+    width:100% !important;
+    height:180px !important;
+}
+.course-img img{
+    height:180px !important;
+    max-width: 100%;
+    background-size: cover;
+}
+.course-info{
+ padding: 10px;
+}
+.course-info span{
+    color: var(--main-color);
+}
+.link-course{
+    float: right;
+    text-decoration: none ;
+    color: var(--light-color);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--dark-mainColor);
+    padding: 5px;
+    border-radius: 8px;
+    transition: all .4s;
+}
+.link-course:hover{
+    background-color: var(--main-color);
+}
+@media (max-width: 992px) {
+    .course-sec > div{
+        font-size: 2.5rem;
+    }
+    .MF-breif h2{
+        font-size: 1rem;
+        
+    }
+    .our-courses-box{
+        margin-left: 3.5rem !important;
+    } 
+}
+@media (max-width: 786px){
+    .our-courses-box{
+        margin-left: 25px !important;
+    }
+    
+}
+/* start design the course details*/
+.course-name{
+    font-size: 2.5rem;
+    font-weight: 700;
+     padding: 20px 20px 20px 0;
+    color: var(--dark-mainColor);
+}
+.course-details-img{
+    width: 600px;
+    margin: 3rem 0;
+}
+.course-details-img img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+.desc,.what-learn{
+    background-color:var(--third-color);
+    color: var(--light-color);
+    border-radius: 8px;
+    padding:20px;
+    width: 600px;
+    margin-bottom: 2rem;
+}
+.what-learn ul li{
+ list-style: none;
+ background-color: var(--dark-mainColor);
+ padding: 10px;
+ border-radius: 8px;
+}
+.course-details{
+    margin-top: 4rem;
+}
+.social-links{
+    list-style: none;
+    color: var(--light-color);
+}
+.social-links .icon{
+    color: var(--light-color);
+    font-size: 1.6rem;
+ 
+}
+.social-links .icon:hover{
+ color: #007aff;
+}
+.price-box,.share,.course-includes{
+    background-color: var(--dark-mainColor);
+    font-size: 1.2rem;
+    color: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.price-box span {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+.price-box .link{
+    text-decoration: none;
+    color: var(--light-color);
+    background-color: #35b1f7;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 5px;
+    display: block;
+    font-weight: 600;
+}
+.back-btn{
+    text-decoration: none;
+    color: var(--light-color);
+    background-color:var(--third-color);
+    width: 100px;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 5px;
+    display: block;
+    font-weight: 600;
+}
+/* course-holder */
+@media (max-width: 992px) {
+    .course-holder{
+        flex-wrap: wrap;
+    }
+    .desc,.what-learn,.course-details-img{
+        width: 400px;
+    }
+}
+@media (max-width: 786px){
+    .our-courses-box{
+        margin-left: 25px !important;
+    }
+    .course-breif{
+       font-size: 1.2rem;
+    }
+    .course-name {
+        font-size: 1.5rem;
+    }
+    .course-details-img,.desc,.what-learn{
+        width: 300px;
+        margin:20px auto 50px;
+    }
+    
+}
